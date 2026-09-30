@@ -19,8 +19,9 @@ El listado se pide al montar la pantalla con `GET /criaturas`. Al seleccionar un
 
 1. En `backend/`, ejecuta `npm ci` y `npm run start:dev`.
 2. Comprueba `http://localhost:3000/criaturas` y después `http://localhost:3000/criaturas/1`.
-3. En `frontend/`, ejecuta `npm ci`, configura `EXPO_PUBLIC_API_URL` en `.env.local` para un móvil físico y ejecuta `npx expo start`.
-4. Selecciona una fila o busca por ID; en la ficha, pulsa **ME GUSTA**.
+3. Si el puerto 3000 está ocupado, en PowerShell ejecuta `$env:PORT=3001; npm run start:dev` y cambia la URL de Expo al mismo puerto.
+4. En `frontend/`, ejecuta `npm ci`, configura `EXPO_PUBLIC_API_URL` en `.env.local` para móvil físico o puerto alternativo y ejecuta `npx expo start`.
+5. Selecciona una fila o busca por ID; en la ficha, pulsa **ME GUSTA**.
 
 Para un teléfono físico, configura la IPv4 del ordenador en `frontend/.env.local` y conecta ambos dispositivos a la misma red.
 
